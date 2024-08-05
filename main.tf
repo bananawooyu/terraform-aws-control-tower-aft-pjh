@@ -1,6 +1,17 @@
 # Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
 
+provider "aws" {
+  region = "ap-northeast-2"
+}
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "5.61.0"
+    }
+  }
+}
 module "aft" {
   source = "github.com/aws-ia/terraform-aws-control_tower_account_factory"
   ct_management_account_id    = var.ct_management_account_id
