@@ -23,7 +23,7 @@ module "aft" {
 
   vcs_provider                                  = "github"
   account_request_repo_name                     = "${var.github_username}/learn-terraform-aft-account-request"
-  # account_provisioning_customizations_repo_name = "${var.github_username}/learn-terraform-aft-account-provisioning-customizations"
-  # global_customizations_repo_name               = "${var.github_username}/learn-terraform-aft-global-customizations"
-  # account_customizations_repo_name              = "${var.github_username}/learn-terraform-aft-account-customizations"
+  account_provisioning_customizations_repo_name = "${var.github_username}/learn-terraform-aft-account-provisioning-customizations"
+  global_customizations_repo_name               = "${var.github_username}/learn-terraform-aft-global-customizations"
+  account_customizations_repo_name              = "${var.github_username}/learn-terraform-aft-account-customizations"
 }
